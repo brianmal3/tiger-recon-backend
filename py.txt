@@ -1,0 +1,23 @@
+    def __auth_tokens(self):
+        """
+        Authenticate with the FNB API and obtain an access token and refresh token.
+        """
+        # Scope for Transaction History API
+        scope = 'i_can'
+
+        # Request body for authentication
+        auth_data = {
+            'grant_type': 'client_credentials',
+            'scope': scope
+            }
+
+        auth_response = requests.post(self.auth_url, data=auth_data, auth=HTTPBasicAuth(self.client_id, self.client_secret))
+
+        # Check if authentication was successful
+        if auth_response.status_code == 200:
+            tokens = json.loads(auth_response.text)
+            self.access_token = tokens['access_token']
+            self.refresh_token = None
+        else:
+            print(f'Authentication failed with status code: {auth_response.status_code}')
+            print(auth_response.text)
