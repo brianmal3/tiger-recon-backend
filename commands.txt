@@ -1,0 +1,33 @@
+
+// Get an existing secret.
+/*
+
+  gcloud projects add-iam-policy-binding recon-back \
+  --member='serviceAccount:reconback@recon-back.iam.gserviceaccount.com' \
+  --project=recon-back \
+  --role='roles/secretmanager.admin'
+
+  gcloud projects add-iam-policy-binding recon-back \
+  --member='serviceAccount:recon-back@appspot.gserviceaccount.com' \
+  --project=recon-back \
+  --role='roles/secretmanager.admin'
+
+      gcloud projects add-iam-policy-binding recon-back \
+      --member='serviceAccount:734454946254-compute@developer.gserviceaccount.com' \
+      --project=recon-back \
+      --role='roles/secretmanager.admin'
+
+     gcloud projects add-iam-policy-binding recon-back \
+      --member='serviceAccount:reconback@recon-back.iam.gserviceaccount.com' \
+      --project=recon-back \
+      --role='roles/firebase.admin'
+
+     gcloud projects add-iam-policy-binding recon-back \
+      --member='serviceAccount:reconback@recon-back.iam.gserviceaccount.com' \
+      --project=recon-back \
+      --role='roles/firestore.admin'
+
+gcloud secrets versions access 1 --secret="1_CLIENT_SECRET"
+
+
+ */

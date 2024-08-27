@@ -4,13 +4,13 @@ import lombok.Data;
 
 @Data
 public class BankTransaction {
-    private String transaction_id;
+    private String transactionId;
 
-    private String booking_date;
+    private String bookingDate;
 
-    private String value_date;
+    private String valueDate;
 
-    private String remittance_info;
+    private String remittanceInfo;
 
     private double reference;
 
@@ -20,9 +20,11 @@ public class BankTransaction {
 
     private boolean posted;
 
-    private String  credit_debit_indicator;
+    private String creditDebitIndicator;
 
-    private String batch_id;
+    private String batchId;
+
+    private String bankId;
 
 
 }

@@ -5,22 +5,24 @@ import lombok.Data;
 @Data
 public class Batch {
     private String batchId;
+
+    private String bankId;
+
     private String name;
+
     private String dateRegistered;
 
-    private String batch_id;
+
+    private String branchCode;
 
 
-    private String branch_code;
+    private String batchDate;
 
 
-    private String batch_date;
+    private String operatorName;
 
 
-    private String operator_name;
-
-
-    private String sub_total;
+    private String subTotal;
 
 
     private double discount;

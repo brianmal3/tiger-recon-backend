@@ -52,7 +52,7 @@ public class BackendApplication  implements ApplicationListener<ApplicationReady
 				.getHandlerMethods();
 
 		logger.info(tag+E.PEAR + E.PEAR + E.PEAR + E.PEAR +
-				" Total Endpoints: " + map.size() + "\n");
+				" Total Backend Endpoints: \uD83C\uDF4E " + map.size() + "\n");
 		map.forEach((key, value) -> logger.info( " \uD83C\uDF50\uD83C\uDF50 " + key));
 		try {
 			firebaseService.initializeFirebase();

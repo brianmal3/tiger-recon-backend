@@ -4,7 +4,8 @@ import lombok.Data;
 
 @Data
 public class BankSecrets {
-    private String bankId, apiKey;
+    private String bankId;
+    private String apiKey;
     private String userName;
     private String password;
     private String clientId;
